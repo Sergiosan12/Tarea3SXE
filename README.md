@@ -73,3 +73,7 @@ http://localhost:8080
 http://localhost:9080
 ```
 Lo que ocurre es que con ambos se accede a la misma página.
+
+## 7.Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página.
+
+Realizando modificaciones en el index.html de mi página web y volviendo a entrar en los enlaces del apartado anterior se pueden ver las modificaciones en ambos enlaces. Lo que quiere decir que ambos servidores siguen sirviendo la misma página.
