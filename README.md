@@ -55,3 +55,21 @@ Y para poder acceder a ella se pone el siguinete enlace en nuestro navegador web
 ```bash
 http://localhost:8080
 ```
+
+## 5.Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
+
+Para crear otro contenedor, en el mismo bind mount y en otro puerto se ejecuta el comando usado anteriormente:
+
+```bash
+docker run -d --name dam_web2 -p 9080:80 -v /home/accesodatos/SXE/WebApache:/usr/local/apache2/htdocs httpd:2.4
+```
+## 6.Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador.
+
+Cuando usamos ambos enlances en el navegador web:
+```bash
+http://localhost:8080
+```
+```bash
+http://localhost:9080
+```
+Lo que ocurre es que con ambos se accede a la misma página.
